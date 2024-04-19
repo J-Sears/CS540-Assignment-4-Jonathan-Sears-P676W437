@@ -110,8 +110,8 @@ void OptimalAlgorithm(int pages[], int frameNumber, int size) //Does the Optimal
         }
         newPages[replaceIndex] = pages[i];
     }
-    cout << "No. of hits = " << hit << endl;
-    cout << "No. of misses = " << size - hit << endl;
+    
+    cout << "Number of Pages Faults: " << size - hit << endl;
 }
 
 void FIFOAlgorithm(int pages[], int frameNumber, int size) //Does the FIFO Algorithm
